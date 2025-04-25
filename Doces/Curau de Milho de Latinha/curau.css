@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(90deg, #d4c6a9, #d4c6a9);
+    color: #333;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    animation: fadeInDown 1s ease;
+  }
+  
+  .user-login {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(5, 5, 5);
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: rgb(5, 5, 5);
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #c75720;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  ul li::before {
+    content: '•';
+    color: #c75720;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  img:hover {
+    transform: scale(1.02);
+  }
+  
+  .method p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .comments {
+    margin-top: 40px;
+  }
+  
+  .comment {
+    background: #f1f6fc;
+    padding: 20px;
+    border-left: 5px solid #c75720;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: background 0.3s;
+  }
+  
+  .comment:hover {
+    background: #e6effc;
+  }
+  
+  .comment strong {
+    color: #c75720;
+  }
+  
+  .comment-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .comment-form input,
+  .comment-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  .comment-form button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .comment-form button:hover {
+    background-color: #005fa3;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
